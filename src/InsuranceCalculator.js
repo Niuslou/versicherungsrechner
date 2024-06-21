@@ -89,17 +89,11 @@ const InsuranceCalculator = () => {
   };
 
   const calculateInsuranceCost = () => {
-    let baseCost = 500; // Beispielbasispreis für die Versicherung
-
-    // Berechnungsfaktoren basierend auf Alter, Unfällen, Fahrzeugwert, etc.
+    let baseCost = 500; 
     const ageFactor = driverAge < 25 ? 1.5 : 1.0;
     const accidentFactor = 1 + (accidentCount * 0.1);
     const vehicleValueFactor = vehicleValue / 20000;
-
-    // Gesamtfaktor
     const totalFactor = ageFactor * accidentFactor * vehicleValueFactor;
-
-    // Berechnen der Versicherungskosten
     const insuranceCost = baseCost * totalFactor;
 
     return insuranceCost;
@@ -178,7 +172,7 @@ const InsuranceCalculator = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="purchaseYear">Baujahr</label>
+              <label htmlFor="purchaseYear">Kaufjahr</label>
               <input
                 type="number"
                 id="purchaseYear"
