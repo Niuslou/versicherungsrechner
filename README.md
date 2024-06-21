@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+Versicherungsrechner
+Dies ist eine einfache React-Anwendung zur Berechnung der Versicherungskosten basierend auf verschiedenen Benutzereingaben. Die App ermöglicht es den Benutzern, Details zu ihrem Fahrzeug, der Nutzung und den Fahrinformationen einzugeben, um ihre Versicherungskosten zu schätzen.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Inhaltsverzeichnis
+Funktionen
+Installation
+Verwendung
+Komponenten
+Styling
+Funktionen
+Schritt-für-Schritt-Formular: Ein mehrstufiges Formular zum Sammeln von Informationen über das Fahrzeug, die Nutzung und den Fahrer.
+Autocomplete-Marken-Auswahl: Autocomplete-Funktionalität zur Auswahl von Automarken.
+Dynamische Modellauswahl: Dynamisches Dropdown-Menü zur Auswahl von Automodellen basierend auf der ausgewählten Marke.
+Berechnung der Versicherungskosten: Berechnet die Versicherungskosten basierend auf den Benutzereingaben.
+Responsive Design: Mobile-optimiert für verschiedene Geräte.
+Installation
+Klonen Sie das Repository:
 
-## Available Scripts
+bash
+Code kopieren
+git clone https://github.com/IhrBenutzername/versicherungsrechner.git
+Navigieren Sie in das Projektverzeichnis:
 
-In the project directory, you can run:
+bash
+Code kopieren
+cd versicherungsrechner
+Installieren Sie die Abhängigkeiten:
 
-### `npm start`
+bash
+Code kopieren
+npm install
+Starten Sie die Anwendung:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Code kopieren
+npm start
+Verwendung
+Starten Sie die Anwendung und öffnen Sie den Browser unter http://localhost:3000.
+Navigieren Sie zur Startseite und klicken Sie auf "Berechnung starten".
+Füllen Sie die Formulare in den einzelnen Schritten aus:
+Schritt 1: Fahrzeugdetails eingeben.
+Schritt 2: Nutzungsdetails eingeben.
+Schritt 3: Fahrerdetails eingeben.
+Schritt 4: Versicherungskosten anzeigen.
+Komponenten
+App.js: Hauptkomponente, die den Router und die Routen definiert.
+Home.js: Startseite der Anwendung.
+InsuranceCalculator.js: Mehrstufiges Formular zur Eingabe der Versicherungsdaten.
+App.js
+Die App-Komponente ist die Hauptkomponente der Anwendung, die die Navigation zwischen den Seiten ermöglicht.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Home.js
+Die Home-Komponente ist die Startseite der Anwendung, die eine Einführung und einen Button zum Starten der Berechnung enthält.
 
-### `npm test`
+InsuranceCalculator.js
+Die InsuranceCalculator-Komponente ist das mehrstufige Formular, in dem die Benutzer ihre Informationen eingeben. Sie enthält die Logik zur Berechnung der Versicherungskosten.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Styling
+Die Anwendung verwendet CSS für das Styling. Die wichtigsten Styles sind in der Datei App.css definiert.
 
-### `npm run build`
+Wichtige CSS-Klassen
+navbar: Stilisiert die Navigationsleiste.
+container: Zentriert den Inhalt und setzt die maximale Breite.
+home-container: Stilisiert den Hauptinhalt der Startseite.
+form-group: Stilisiert die Formulareingaben.
+progress-bar-container: Stilisiert die Fortschrittsanzeige des mehrstufigen Formulars.
+button: Stilisiert die Schaltflächen.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
