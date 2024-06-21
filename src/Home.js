@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <nav className="navbar">
                 <div className="navbar-container">
-                <Link to="/" className="navbar-logo">Insurance Calculator</Link>
+                <Link to="/" className="navbar-logo">Nils' Versicherungsrechner</Link>
                 <ul className="navbar-menu">
                     <li className="navbar-item"><Link to="/">Home</Link></li>
                     <li className="navbar-item"><a href="#">Link</a></li>

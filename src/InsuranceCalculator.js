@@ -109,7 +109,7 @@ const InsuranceCalculator = () => {
     <div>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">Insurance Calculator</Link>
+          <Link to="/" className="navbar-logo">Nils' Versicherungsrechner</Link>
           <ul className="navbar-menu">
             <li className="navbar-item"><Link to="/">Home</Link></li>
             <li className="navbar-item"><a href="#">Link</a></li>
@@ -233,21 +233,6 @@ const InsuranceCalculator = () => {
           <form>
             <div className="form-group">
               <label htmlFor="usage">Nutzung</label>
-              <div>
-                <input
-                  type="checkbox"
-                  id="commuting"
-                  value="commuting"
-                  checked={usage.includes('commuting')}
-                  onChange={(e) => {
-                    const { value, checked } = e.target;
-                    setUsage((prev) =>
-                      checked ? [...prev, value] : prev.filter((u) => u !== value)
-                    );
-                  }}
-                />
-                <label htmlFor="commuting">Pendeln</label>
-              </div>
               <div>
                 <input
                   type="checkbox"
